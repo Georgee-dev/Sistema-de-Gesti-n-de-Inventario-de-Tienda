@@ -1,24 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 
 class Program
 {
-    
-    // Matrizes  para almacenar los productos, cliente, ventas y demas datos relevantes. 
-    static Producto[,] stockProductos = new Producto[5, 10];
-    static List<Cliente> clientes = new List<Cliente>();
-    static Dictionary<int, Venta> ventas = new Dictionary<int, Venta>();
-
     static void Main()
     {
-        // Agregar productos de ejemplo a la matriz
-        InicializarStock();
+        Inventario.InicializarStock(); // Inicializa productos en la matriz
 
-        // Agregar clientes de ejemplo a la lista
-        clientes.Add(new Cliente(1, "Juan Pérez", "Av. Siempre Viva 123", "123-4567"));
-        clientes.Add(new Cliente(2, "María López", "Calle Falsa 456", "987-6543"));
-
-        // Menú principal
         int opcion;
         do
         {
@@ -36,22 +23,22 @@ class Program
             switch (opcion)
             {
                 case 1:
-                    RegistrarProducto();
+                    Inventario.RegistrarProducto();
                     break;
                 case 2:
-                    RegistrarCliente();
+                    GestionClientes.RegistrarCliente();
                     break;
                 case 3:
-                    MostrarStock();
+                    Inventario.MostrarStock();
                     break;
                 case 4:
-                    RealizarVenta();
+                    GestionVentas.RealizarVenta();
                     break;
                 case 5:
-                    ConsultarVentas();
+                    GestionVentas.ConsultarVentas();
                     break;
                 case 6:
-                    EliminarVenta();
+                    GestionVentas.EliminarVenta();
                     break;
                 case 7:
                     Console.WriteLine("Saliendo del sistema...");
@@ -62,6 +49,4 @@ class Program
             }
         } while (opcion != 7);
     }
-
-  
 }

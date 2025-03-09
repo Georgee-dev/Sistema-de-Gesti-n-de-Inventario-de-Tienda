@@ -56,10 +56,16 @@ class GestionVentas
     public static void ConsultarVentas()
     {
         Console.WriteLine("\n--- Ventas Realizadas ---");
-        foreach (var venta in ventas.Values)
-        {
-            venta.MostrarVenta();
+        if (ventas.Count == 0){
+            Console.WriteLine("No hay ventas de momento."); // Mensaje cuando no hay ventas
+            return;
+        }else{
+
+            foreach (var venta in ventas.Values){
+                venta.MostrarVenta();
+            }
         }
+      
     }
 
     // Elimina una venta y devuelve los productos al stock

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VR210280_SistemaDeGestionDeInventarioDeTienda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d88e4f2fb04b59384df4acb2d539b2eaf09e16a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a63b3d775116772fc22627dd137c87f24f51d6d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("VR210280_SistemaDeGestionDeInventarioDeTienda")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VR210280_SistemaDeGestionDeInventarioDeTienda")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
