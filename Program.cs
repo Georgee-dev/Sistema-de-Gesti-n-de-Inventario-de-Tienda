@@ -9,7 +9,7 @@ class Program
         int opcion;
         do
         {
-            Console.WriteLine("\n--- Sistema de Gestión de Inventario ---");
+            Console.WriteLine("\n VR-210280 - Sistema de Gestión de Inventario");
             Console.WriteLine("1. Registrar nuevo producto");
             Console.WriteLine("2. Registrar nuevo cliente");
             Console.WriteLine("3. Mostrar stock de productos");
